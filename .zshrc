@@ -18,3 +18,4 @@ zinit load zdharma/history-search-multi-word
 zinit load urbainvaes/fzf-marks
 ZSH_THEME="dracula"
 ### End of Zinit's installer chunk
+unsetopt nomatch
