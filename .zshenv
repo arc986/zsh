@@ -22,7 +22,6 @@ export PATH=$GOBIN:$PATH
 alias vim="nvim"
 alias mutt="neomutt"
 
-
 alias u-zsh="wget -N https://raw.githubusercontent.com/arc986/zsh/main/.zsh{rc,env} -P ~/"
 
 alias i-nv="rm -Rf ~/.config/nvim;git clone --depth 1 --shallow-submodules --recurse-submodules https://github.com/arc986/nvim.git ~/.config/nvim;vim +PlugInstall +'CocInstall -sync coc-json coc-sh coc-css coc-html coc-tsserver coc-markdownlint coc-pyright coc-rust-analyzer coc-vetur' +qall"
@@ -33,6 +32,9 @@ alias u-mutt="git -C ~/.config/mutt reset --hard origin/main;git -C ~/.config/mu
 
 alias i-kitty="rm -Rf ~/.config/kitty;git clone --depth 1 --shallow-submodules --recurse-submodules https://github.com/arc986/kitty.git ~/.config/kitty"
 alias u-kitty="git -C ~/.config/kitty reset --hard origin/main;git -C ~/.config/kitty pull"
+
+alias i-bgima="rm -Rf ~/.config/bgima;git clone --depth 1 --shallow-submodules --recurse-submodules https://github.com/arc986/bgima.git ~/.config/bgima"
+alias u-bgima="git -C ~/.config/bgima reset --hard origin/main;git -C ~/.config/bgima pull"
 
 #alias o-gpod="nautilus ~/.local/share/gnome-podcasts/"                                                                                                                                                                                  
 #alias c-gpod="rm -Rf ~/.local/share/gnome-podcasts/Downloads/*"
