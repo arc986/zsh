@@ -35,6 +35,7 @@ alias u-kitty="git -C ~/.config/kitty reset --hard origin/main;git -C ~/.config/
 
 alias i-bgima="rm -Rf ~/.config/bgima;git clone --depth 1 --shallow-submodules --recurse-submodules https://github.com/arc986/bgima.git ~/.config/bgima"
 alias u-bgima="git -C ~/.config/bgima reset --hard origin/main;git -C ~/.config/bgima pull"
+alias st-bgima="feh --bg-scale ~/.config/bgima/1366_768/bg01.jpg; echo '~/.fehbg &'>> ~/.xsession"
 
 #alias o-gpod="nautilus ~/.local/share/gnome-podcasts/"                                                                                                                                                                                  
 #alias c-gpod="rm -Rf ~/.local/share/gnome-podcasts/Downloads/*"
