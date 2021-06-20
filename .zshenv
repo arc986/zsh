@@ -33,7 +33,7 @@ alias u-mutt="git -C ~/.config/mutt reset --hard origin/main;git -C ~/.config/mu
 alias i-kitty="rm -Rf ~/.config/kitty;git clone --depth 1 --shallow-submodules --recurse-submodules https://github.com/arc986/kitty.git ~/.config/kitty"
 alias u-kitty="git -C ~/.config/kitty reset --hard origin/main;git -C ~/.config/kitty pull"
 
-alias i-bg="rm -Rf $(xdg-user-dir PICTURES)/Background;git clone -b $(cat /sys/class/graphics/*/virtual_size|sed 's/,/_/g') --depth 1 --shallow-s
+alias i-bg="rm -Rf $(xdg-user-dir PICTURES)/Background;git clone -b $(cat /sys/class/graphics/*/virtual_size|sed 's/,/_/g') --depth 1 --shallow-s"
 alias u-bg="git -C $(xdg-user-dir PICTURES)/Background reset --hard origin/$(cat /sys/class/graphics/*/virtual_size|sed 's/,/_/g')"
 
 #alias o-gpod="nautilus ~/.local/share/gnome-podcasts/"                                                                                                                                                                                  
