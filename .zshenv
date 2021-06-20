@@ -33,9 +33,8 @@ alias u-mutt="git -C ~/.config/mutt reset --hard origin/main;git -C ~/.config/mu
 alias i-kitty="rm -Rf ~/.config/kitty;git clone --depth 1 --shallow-submodules --recurse-submodules https://github.com/arc986/kitty.git ~/.config/kitty"
 alias u-kitty="git -C ~/.config/kitty reset --hard origin/main;git -C ~/.config/kitty pull"
 
-alias i-bgima="rm -Rf ~/.config/bgimg;git clone --depth 1 --shallow-submodules --recurse-submodules https://github.com/arc986/bgimg.git ~/.config/bgimg"
-alias u-bgima="git -C ~/.config/bgimg reset --hard origin/main;git -C ~/.config/bgimg pull"
-alias st-bgima="feh --bg-scale ~/.config/bgimg/1366_768/bg01.jpg; echo '~/.fehbg &'>> ~/.xsession"
+alias i-bg="rm -Rf $(xdg-user-dir PICTURES)/Background;git clone --depth 1 --shallow-submodules --recurse-submodules https://github.com/arc986/bg
+alias u-bg="git -C $(xdg-user-dir PICTURES)/Background reset --hard origin/main"
 
 #alias o-gpod="nautilus ~/.local/share/gnome-podcasts/"                                                                                                                                                                                  
 #alias c-gpod="rm -Rf ~/.local/share/gnome-podcasts/Downloads/*"
