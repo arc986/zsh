@@ -24,8 +24,8 @@ alias mutt="neomutt"
 
 alias u-zsh="wget -N https://raw.githubusercontent.com/arc986/zsh/main/.zsh{rc,env} -P ~/"
 
-alias i-nv="rm -Rf ~/.config/nvim;git clone --depth 1 --shallow-submodules --recurse-submodules https://github.com/arc986/nvim.git ~/.config/nvim;vim +PlugInstall +'CocInstall -sync coc-json coc-sh coc-css coc-html coc-tsserver coc-markdownlint coc-pyright coc-rust-analyzer coc-vetur' +qall"
-alias u-nv="git -C ~/.config/nvim reset --hard origin/main;git -C ~/.config/nvim pull;vim +PlugUpdate +'CocInstall -sync coc-json coc-sh coc-css coc-html coc-tsserver coc-markdownlint coc-pyright coc-rust-analyzer coc-vetur' +qall"
+alias i-nv="rm -Rf ~/.config/nvim;git clone --depth 1 --shallow-submodules --recurse-submodules https://github.com/arc986/nvim.git ~/.config/nvim;vim +PlugInstall +'CocInstall -sync coc-json coc-sh coc-css coc-html coc-tsserver coc-markdownlint coc-pyright coc-rust-analyzer coc-vetur coc-rust-analyzer' +qall"
+alias u-nv="git -C ~/.config/nvim reset --hard origin/main;git -C ~/.config/nvim pull;vim +PlugUpdate +'CocInstall -sync coc-json coc-sh coc-css coc-html coc-tsserver coc-markdownlint coc-pyright coc-rust-analyzer coc-vetur coc-rust-analyzer' +qall"
 
 alias i-mutt="rm -Rf ~/.config/mutt;git clone --depth 1 --shallow-submodules --recurse-submodules https://github.com/arc986/neomutt.git ~/.config/mutt"
 alias u-mutt="git -C ~/.config/mutt reset --hard origin/main;git -C ~/.config/mutt pull"
@@ -33,7 +33,7 @@ alias u-mutt="git -C ~/.config/mutt reset --hard origin/main;git -C ~/.config/mu
 alias i-kitty="rm -Rf ~/.config/kitty;git clone --depth 1 --shallow-submodules --recurse-submodules https://github.com/arc986/kitty.git ~/.config/kitty"
 alias u-kitty="git -C ~/.config/kitty reset --hard origin/main;git -C ~/.config/kitty pull"
 
-alias i-bg="rm -Rf $(xdg-user-dir PICTURES)/Background;git clone -b $(cat /sys/class/graphics/*/virtual_size|sed 's/,/_/g') --depth 1 --shallow-s
+alias i-bg="rm -Rf $(xdg-user-dir PICTURES)/Background;git clone -b $(cat /sys/class/graphics/*/virtual_size|sed 's/,/_/g') --depth 1 --shallow-s"
 alias u-bg="git -C $(xdg-user-dir PICTURES)/Background reset --hard origin/$(cat /sys/class/graphics/*/virtual_size|sed 's/,/_/g')"
 
 #alias o-gpod="nautilus ~/.local/share/gnome-podcasts/"                                                                                                                                                                                  
