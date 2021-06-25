@@ -22,6 +22,10 @@ export PATH=$GOBIN:$PATH
 alias vim="nvim"
 alias mutt="neomutt"
 
+alias ls="exa --icons --classify"
+alias ll="exa --icons --git --classify --long"
+alias lr="exa --icons --classify --tree --level=2"
+
 alias u-zsh="wget -N https://raw.githubusercontent.com/arc986/zsh/main/.zsh{rc,env} -P ~/"
 
 alias i-nv="rm -Rf ~/.config/nvim;git clone --depth 1 --shallow-submodules --recurse-submodules https://github.com/arc986/nvim.git ~/.config/nvim;vim +PlugInstall +'CocInstall -sync coc-json coc-sh coc-css coc-html coc-tsserver coc-markdownlint coc-pyright coc-rust-analyzer coc-vetur coc-rust-analyzer' +qall"
