@@ -40,6 +40,12 @@ alias u-kitty="git -C ~/.config/kitty reset --hard origin/main;git -C ~/.config/
 alias i-bg="rm -Rf $(xdg-user-dir PICTURES)/Background;git clone -b $(cat /sys/class/graphics/*/virtual_size|sed 's/,/_/g') --depth 1 --shallow-s"
 alias u-bg="git -C $(xdg-user-dir PICTURES)/Background reset --hard origin/$(cat /sys/class/graphics/*/virtual_size|sed 's/,/_/g')"
 
+alias i-jupyter="rm -Rf ~/.jupyter;mkdir ~/.jupyter;cd ~/.jupyter;virtualenv .python;source .python/bin/activate;pip install jupyterlab numpy pandas;deactivate;cd ~/;~/.jupyter/.python/bin/jupyter lab"
+alias jupyter-pip="~/.jupyter/.python/bin/python -m pip"
+alias jupyter-on="if pgrep -f '[j]upyter' > /dev/null; then echo 'Running'; else nohup ~/.jupyter/.python/bin/jupyter lab > /dev/null 2>&1 &;echo 'Running'; fi"
+alias jupyter-of="kill -9 $(pgrep -f '[j]upyter');echo 'Stopped'"
+alias jupyter-st="if pgrep -f '[j]upyter' > /dev/null; then echo 'Running'; else echo 'Stopped'; fi"
+
 #alias o-gpod="nautilus ~/.local/share/gnome-podcasts/"                                                                                                                                                                                  
 #alias c-gpod="rm -Rf ~/.local/share/gnome-podcasts/Downloads/*"
 
