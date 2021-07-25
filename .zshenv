@@ -42,9 +42,10 @@ alias u-kitty="git -C ~/.config/kitty reset --hard origin/main;git -C ~/.config/
 
 alias i-jupyter="rm -Rf ~/.jupyter;mkdir ~/.jupyter;cd ~/.jupyter;virtualenv .python;source .python/bin/activate;pip install jupyterlab numpy pandas;deactivate;cd ~/;~/.jupyter/.python/bin/jupyter lab"
 alias jupyter-pip="~/.jupyter/.python/bin/python -m pip"
+
 alias jupyter-on="if pgrep -f '[j]upyter' > /dev/null; then echo 'Running'; else nohup ~/.jupyter/.python/bin/jupyter lab > /dev/null 2>&1 &;echo 'Running'; fi"
-alias jupyter-of="kill -9 $(pgrep -f '[j]upyter');echo 'Stopped'"
 alias jupyter-st="if pgrep -f '[j]upyter' > /dev/null; then echo 'Running'; else echo 'Stopped'; fi"
+alias jupyter-of="kill -9 $(pgrep -f '[j]upyter');echo 'Stopped'"
 
 #alias o-gpod="nautilus ~/.local/share/gnome-podcasts/"                                                                                                                                                                                  
 #alias c-gpod="rm -Rf ~/.local/share/gnome-podcasts/Downloads/*"
@@ -54,7 +55,7 @@ alias jupyter-st="if pgrep -f '[j]upyter' > /dev/null; then echo 'Running'; else
 # alias wlan-of="sudo netctl stop"
 
 alias ssh-on="sudo systemctl start sshd"
-alias ssh-st="sudo systemctl status sshd"
+alias ssh-st="systemctl status sshd"
 alias ssh-of="sudo systemctl stop sshd"
 
 alias kvm-on="sudo systemctl start libvirtd.service"
